@@ -1,15 +1,15 @@
-package task1_1_model;
+package task1_1.model;
 
 public class Task1_1Model {
     private int v;
     private char[] res;
 
-    public int getV() {
-        return v;
-    }
-
     public void setV(int v) {
         this.v = v;
+    }
+
+    public int getV() {
+        return v;
     }
 
     public char[] getRes() {

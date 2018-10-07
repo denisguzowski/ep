@@ -1,4 +1,4 @@
-package task1_3_model;
+package task1_3.model;
 
 public class Task1_3Model {
     private int height;

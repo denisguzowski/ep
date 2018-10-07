@@ -1,8 +1,8 @@
-package task1_3_main;
+package task1_3.main;
 
-import task1_3_controller.Task1_3Controller;
-import task1_3_model.Task1_3Model;
-import task1_3_view.Task1_3View;
+import task1_3.controller.Task1_3Controller;
+import task1_3.model.Task1_3Model;
+import task1_3.view.Task1_3View;
 
 public class MVCMain {
     public static void main(String[] args){

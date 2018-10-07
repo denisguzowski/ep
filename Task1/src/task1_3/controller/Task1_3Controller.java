@@ -1,8 +1,8 @@
-package task1_3_controller;
+package task1_3.controller;
 
-import task1_3_model.Task1_3Model;
-import task1_3_view.Task1_3View;
-import task1_3_utilities.InputUtility;
+import task1_3.model.Task1_3Model;
+import task1_3.view.Task1_3View;
+import task1_3.utilities.InputUtility;
 
 public class Task1_3Controller {
     private Task1_3Model model;

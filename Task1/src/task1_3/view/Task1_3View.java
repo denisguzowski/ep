@@ -1,14 +1,14 @@
-package task1_3_view;
+package task1_3.view;
 
 public class Task1_3View {
-    public static final String INPUT_INT_DATA = "Enter an positive integer ";
+    public static final String INPUT_INT_DATA = "Enter a positive integer ";
     public static final String WRONG_INPUT_INT_DATA = "Wrong input! Repeat please ";
 
     public void printMessage(String message){
         System.out.println(message);
     }
 
-    public static void printPyramid(int height){
+    public void printPyramid(int height){
         if((height < 1) || (height > 9)){
             throw new IllegalArgumentException();
         }
