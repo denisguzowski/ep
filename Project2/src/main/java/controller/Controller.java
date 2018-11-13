@@ -3,7 +3,7 @@ package controller;
 import model.analyzers.CharacterArrayAnalyzer;
 import model.analyzers.SymbolArrayAnalyzer;
 import model.analyzers.SymbolSequenceArrayAnalyzer;
-import model.entity.Text;
+import model.Text;
 import model.entity.partOfTheText.Sentence;
 import model.entity.partOfTheText.TextPart;
 import model.entity.symbol.Symbol;
