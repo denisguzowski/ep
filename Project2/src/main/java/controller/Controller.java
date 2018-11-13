@@ -3,12 +3,13 @@ package controller;
 import model.analyzers.CharacterArrayAnalyzer;
 import model.analyzers.SymbolArrayAnalyzer;
 import model.analyzers.SymbolSequenceArrayAnalyzer;
+import model.entity.Text;
 import model.entity.partOfTheText.Sentence;
 import model.entity.partOfTheText.TextPart;
 import model.entity.symbol.Symbol;
 import model.entity.symbolSequence.SymbolSequence;
 import model.entity.symbolSequence.Whitespaces;
-import utilities.ReadFile;
+import utilities.WWFile;
 
 import java.io.IOException;
 
@@ -23,7 +24,7 @@ public class Controller {
 
         Character[] characters = null;
         try {
-            characters = ReadFile.readCharacterArrayFromFile("D:\\IdeaProjects\\EpamTraining\\EpamTraining\\Project2\\src\\main\\resources\\test.txt");
+            characters = WWFile.readCharacterArrayFromFile("D:\\IdeaProjects\\EpamTraining\\EpamTraining\\Project2\\src\\main\\resources\\test.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,10 +49,13 @@ public class Controller {
             }
         }
 
-        for (TextPart tp : textParts) {
-            System.out.print(tp);
+        Text text = new Text(textParts);
+
+        try {
+            WWFile.writeTextToFile("D:\\IdeaProjects\\EpamTraining\\EpamTraining\\Project2\\src\\main\\resources\\testResult.txt", text.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        System.out.println();
     }
 }
 
